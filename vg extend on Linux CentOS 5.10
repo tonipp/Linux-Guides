@@ -1,8 +1,0 @@
-Create new PV and exteden vg/lv group on linux CentOS 5.10
-
-fdisk -l
-pvcreate /dev/sdc
-vgextend VolGroup00 /dev/sdc
-lvextend -l +100FREE /dev/VolGroup00/LogVol00
-resize2fs /dev/VolGroup00/LogVol00
-df -h
