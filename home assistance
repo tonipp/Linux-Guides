@@ -1,0 +1,9 @@
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install python3-pip python3-venv
+sudo apt-get install libffi-dev libssl-dev
+python3 -m venv homeassistant
+cd homeassistant
+source bin/activate
+python3 -m pip install wheel
+python3 -m pip install homeassistant
